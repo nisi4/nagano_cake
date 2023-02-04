@@ -4,23 +4,26 @@
  </div>
  <div class="container-fluid">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do %>
-   <div class="row offset-3">
-    <div class="col-3 align-middle">
-      <p class="h5 pr-4 mb-0">メールアドレス</p>
+   <div class="row offset-3 align-items-center">
+    <div class="col-3">
+      <p class="h5 pr-4 mb-4">メールアドレス</p>
     </div>
-    <div class="col-6 field">
+    <div class="col-6 field mb-4">
       <input type="email" autofocus="autofocus" class="form-control">
     </div>
    </div>
-   <div class="row">
-    <div class="field">
-      <span>パスワード</span>
-      <input type="password" autocomplete="off" class="form_control w20">
+   <div class="row offset-3 align-items-center">
+    <div class="col-3">
+      <p class="h5 pr-4 mb-0">パスワード</p>
+    </div>
+    <div class="col-6 field">
+     <input type="password" autocomplete="off" class="form-control">
     </div>
    </div>
-   <div class="row">
-    <div class="actions">
-      <input type="submit" value="ログイン" class="btn btn-primary">
+   <div class="row offset-3 mt-5">
+    <div class="col-3"></div>
+    <div class="col-6 actions">
+      <input type="submit" value="ログイン" class="btn btn-primary px-5">
     </div>
    </div>
   <% end %>
